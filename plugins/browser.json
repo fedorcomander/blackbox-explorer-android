@@ -1,0 +1,35 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<preference name=\"AndroidPersistentFileLocation\" value=\"Internal\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.maginsoft.mfilechooser": {
+            "PACKAGE_NAME": "org.anuta.blackbox"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "org.anuta.blackbox"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "org.anuta.blackbox"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "org.anuta.blackbox"
+        }
+    },
+    "dependent_plugins": {}
+}

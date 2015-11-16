@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.anuta.blackbox" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="MFileChooser">
+        <param name="android-package" value="com.maginsoft.phonegap.plugin.MFileChooser" />
+    </feature>
+    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
+    <preference default="15+" name="xwalkVersion" />
+    <preference default="--disable-pull-to-refresh-effect" name="xwalkCommandLine" />
+    <preference default="embedded" name="xwalkMode" />
+    <preference default="true" name="xwalkMultipleApk" />
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <allow-intent href="market:*" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="AndroidExtraFilesystems" value="files-external,sdcard,files,documents,cache,cache-external,root" />
+    <icon density="mdpi" src="res/android/mipmap-mdpi/ic_launcher.png" />
+    <icon density="hdpi" src="res/android/mipmap-hdpi/ic_launcher.png" />
+    <icon density="xhdpi" src="res/android/mipmap-xhdpi/ic_launcher.png" />
+    <icon density="xxhdpi" src="res/android/mipmap-xxhdpi/ic_launcher.png" />
+    <icon density="xxxhdpi" src="res/android/mipmap-xxxhdpi/ic_launcher.png" />
+    <name>Blackbox Explorer</name>
+    <description>
+        Cleanflight BlackBox Explorer
+    </description>
+    <author email="fedor@anuta.org" href="http://cleanflight.com/">
+        Fedor Commander
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="xwalkVersion" value="15+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+</widget>
